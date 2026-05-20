@@ -1,0 +1,9 @@
+test/
+.github/
+.vscode/
+.idea/
+*.tgz
+coverage/
+.editorconfig
+.eslintrc*
+.prettierrc*

@@ -1,0 +1,49 @@
+{
+  "name": "securitycheck",
+  "version": "0.1.0",
+  "description": "Pre-commit secret scanner. Blocks API keys, tokens, .env files, and private keys from leaking into git. Ships as a Claude Code skill and a standalone CLI / git hook.",
+  "bin": {
+    "securitycheck": "./bin/cli.js",
+    "sec": "./bin/cli.js"
+  },
+  "main": "./lib/scan.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "scan": "node bin/cli.js scan"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "skill/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "security",
+    "secrets",
+    "pre-commit",
+    "git-secrets",
+    "secret-scan",
+    "leak-detection",
+    "gitignore",
+    "git-hook",
+    "husky",
+    "lefthook",
+    "claude-code",
+    "claude-skill",
+    "anthropic",
+    "supply-chain"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpectreMercury/securitycheck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SpectreMercury/securitycheck/issues"
+  },
+  "homepage": "https://github.com/SpectreMercury/securitycheck#readme"
+}
