@@ -1,5 +1,5 @@
 {
-  "name": "@error404/securitycheck",
+  "name": "@404labs/securitycheck",
   "version": "0.1.0",
   "description": "Pre-commit secret scanner. Blocks API keys, tokens, .env files, and private keys from leaking into git. Ships as a Claude Code skill and a standalone CLI / git hook.",
   "bin": {
