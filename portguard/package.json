@@ -1,0 +1,51 @@
+{
+  "name": "@404labs/portguard",
+  "version": "0.1.0",
+  "description": "Stable per-project localhost port assignment for AI-built apps. Prevents 3000/3001 drift, checks occupancy, and ships as an agent skill plus CLI.",
+  "bin": {
+    "portguard": "./bin/cli.js",
+    "pgport": "./bin/cli.js"
+  },
+  "main": "./lib/registry.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "assign": "node bin/cli.js assign"
+  },
+  "files": [
+    "agents/",
+    "bin/",
+    "lib/",
+    "references/",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "localhost",
+    "port",
+    "dev-server",
+    "developer-tools",
+    "ai-coding",
+    "stable-port",
+    "codex-cli",
+    "claude-code",
+    "antigravity",
+    "kimi-cli",
+    "agent-skill",
+    "nextjs",
+    "vite"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpectreMercury/404labs.git",
+    "directory": "portguard"
+  },
+  "bugs": {
+    "url": "https://github.com/SpectreMercury/404labs/issues"
+  },
+  "homepage": "https://github.com/SpectreMercury/404labs/tree/master/portguard#readme"
+}

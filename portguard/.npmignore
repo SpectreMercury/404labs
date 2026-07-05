@@ -1,0 +1,11 @@
+test/
+.github/
+.vscode/
+.idea/
+*.tgz
+coverage/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example

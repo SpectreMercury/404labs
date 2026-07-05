@@ -1,0 +1,4 @@
+interface:
+  display_name: "Portguard"
+  short_description: "Assign stable local dev ports"
+  default_prompt: "Use $portguard to assign a stable local development port for this project before starting its dev server."

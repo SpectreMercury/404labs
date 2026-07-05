@@ -13,6 +13,7 @@ four most common targets.
 | Skill | What it does | npm package |
 |---|---|---|
 | [securitycheck](./securitycheck) | Pre-commit secret-leak gate: `.gitignore` audit, sensitive-file check, diff content scan for API keys, tokens, private keys, DB URIs. | [`@404labs/securitycheck`](https://www.npmjs.com/package/@404labs/securitycheck) |
+| [portguard](./portguard) | Stable per-project localhost port assignment for AI-built apps: skips `3000/3001`, checks occupancy, and prevents stopped projects' ports from being reused accidentally. | [`@404labs/portguard`](https://www.npmjs.com/package/@404labs/portguard) |
 
 ## Installing a skill
 
@@ -22,6 +23,7 @@ auto-detects which one you have):
 
 ```bash
 npx skills add SpectreMercury/404labs --skill <skill-name>            # current agent
+npx skills add SpectreMercury/404labs --skill <skill-name> -g         # global install
 npx skills add SpectreMercury/404labs --skill <skill-name> --all      # all agents
 npx skills add SpectreMercury/404labs --skill <skill-name> -a codex   # specific agents
 ```
@@ -52,6 +54,7 @@ npx @404labs/<skill-name> install --list-targets # see all options
 ├── .gitignore
 └── <skill-name>/
     ├── SKILL.md          # canonical instruction file (loaded by Claude)
+    ├── agents/           # optional UI metadata for agent skill lists
     ├── references/       # extra docs the skill points the agent at
     ├── package.json      # if the skill ships a CLI
     ├── bin/  lib/  test/ # CLI source, where applicable
